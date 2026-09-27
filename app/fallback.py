@@ -251,7 +251,8 @@ def perf_dip(f: dict) -> dict:
         "A fresh Google post is usually the fastest fix — here's one ready:",
         _draft(f, f"{offer}." if offer else _since(f), _book(f)),
         _post_cta(f))
-    return _res(body, "binary_yes_no", "Perf dip: exact drop + peer anchor (loss aversion), one concrete fix using their live offer.")
+    return _res(body, "binary_yes_no", "Perf dip: exact drop + peer anchor (loss aversion); the fix is delivered as a ready "
+                                       "post built from their own details" + (" and live offer." if offer else "."))
 
 
 def _members_line(f: dict) -> str | None:
